@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramesh</title>
+</head>
+<body>
+    <h4><pre> Question 4 Following the 3rd question 
+        
+        A. Write a function to display all the objects having age less than 30 
+        
+        B. Write a function to display all the objects having country India
+</pre></h4>
+<h1>Open Console</h1>
+
+<script>
+    let details=[
+    {
+    name : "Raj",
+    age  :  21,
+country  : "India",
+hobbies  : ["Coding","Gaming"],
+    },
+
+    {
+        name : "YOLO",
+        age  :  25,
+    country  : "America",
+    hobbies  : ["Coding","Gaming"],
+    },
+
+    {
+        name : "JJK",
+        age  :  30,
+    country  : "Africa",
+    hobbies  : ["Coding","Gaming"],
+    },
+
+
+    {
+        name : "Soul",
+        age  :  25,
+    country  : "South KOria",
+    hobbies  : ["Coding","Gaming"],
+    },
+
+    {
+        name : "Lau",
+        age  :  20,
+    country  : "Japan",
+    hobbies  : ["Coding","Gaming"],
+    }
+]
+
+console.log("A) age les than 30");
+function getAge(){
+    for(let i=0;i<details.length;i++)
+    {
+        if(details[i].age<30)
+        {
+            let element1 = details[i];
+            console.log(`Name: ${element1.name}\n Age: ${element1.age}\n Country: ${element1.country}\n Hobbies: ${element1.hobbies}`);
+        }
+    }
+}
+getAge();
+
+
+console.log("B) Country is india")
+function getCountry(){
+    for(let i=0;i<details.length;i++)
+    {
+        if(details[i].country == "India")
+        {
+            let element2 = details[i];
+            console.log(`Name: ${element2.name}\n Age: ${element2.age}\n Country: ${element2.country}\n Hobbies: ${element2.hobbies}`);
+        }
+    }
+}
+getCountry();
+</script>
+</body>
+</html>
